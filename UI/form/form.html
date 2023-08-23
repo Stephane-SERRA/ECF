@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=
+    , initial-scale=1.0"
+    />
+    <link rel="stylesheet" href="form.css" />
+    <title>Garage Parrot - Accueil</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Courgette&family=Sintony&display=swap"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <div class="d-flex align-items-center">
+          <a class="navbar-brand" href="#">
+            <img
+              src="../img/logo_garage.jpg"
+              alt="Logo Garage Parrot"
+              title="Garage Parrot"
+            />
+          </a>
+
+          <!--burger menu button-->
+
+          <button
+            class="navbar-toggler ms-auto custom-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span>
+              <svg
+                xmlns="#"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-three-dots-vertical"
+                viewbox="0 0 16 16"
+              >
+                <path d="#"></path>
+              </svg>
+            </span>
+          </button>
+        </div>
+
+        <!--navbar-->
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="../home/index.html"
+                style="color: white"
+              >
+                ACCUEIL
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="color: white"> SERVICES </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="color: white"> OCCASIONS </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="color: white"> AVIS </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="color: white"> CONNECTION </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <header></header>
+    <main>
+      <div class="container-fluid text-center p-3">
+        <h2>Connexion</h2>
+        <div class="row" id="form-cont">
+          <div class="col-12 col-md-5 text-center" id="sign-img">
+            <img class="sign_reserved" src="../img/reserved_sign.jpg" />
+          </div>
+          <div class="col-12 col-md-7 text-center" id="connect-form">
+            <form>
+              <!-- Email input -->
+              <div class="form-outline mb-4">
+                <input type="email" id="form2Example1" class="form-control" />
+                <label class="form-label" for="form2Example1"
+                  >Identifiant ou adresse mail</label
+                >
+              </div>
+
+              <!-- Password input -->
+              <div class="form-outline mb-4">
+                <input
+                  type="password"
+                  id="form2Example2"
+                  class="form-control"
+                />
+                <label class="form-label" for="form2Example2"
+                  >Mot de passe</label
+                >
+              </div>
+
+              <!-- Submit button -->
+              <button
+                type="button"
+                class="btn btn-block mb-4"
+                id="button-submit"
+              >
+                Se connecter
+              </button>
+
+              <!-- Register buttons -->
+              <div class="text-center">
+                <p>
+                  Mot de passe oublié ?
+                  <a href="#!" id="request-button">Demandez-en un autre</a>.
+                </p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="container-fluid text-center p-3" id="copyright-cont">
+        © Copyright ECF STUDI 2023. Website by: Stéphane SERRA
+      </div>
+    </footer>
+    <script src="../script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -17,25 +17,21 @@
   }
 }
 
-@media (max-width: 500px) {
-  .cover-text {
-    margin-top: 0px;
-  }
-  .img_services {
-    width: 300px;
-    height: auto;
+@media (max-width: 768px) {
+  #form-cont {
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 }
 
-@media (min-width: 900px) {
-  .cover-text {
-    margin-top: 70px;
+@media (min-width: 768px) {
+  #form-cont {
+    padding-top: 80px;
+    padding-bottom: 80px;
   }
-}
-
-@media (min-width: 1400px) {
-  .cover-text {
-    margin-top: 300px;
+  #connect-form {
+    padding-left: 80px;
+    padding-right: 150px;
   }
 }
 
@@ -106,33 +102,6 @@ svg {
   font-family: "Sintony", sans-serif;
 }
 
-button {
-  background-color: #5c160d;
-  border: 0;
-  border-radius: 0;
-  color: #fafafa;
-  margin-bottom: 5px;
-  margin-top: 20px;
-  padding: 10px 50px;
-  transition: color 0.3s ease;
-}
-
-button,
-select {
-  text-transform: none;
-}
-
-button,
-input,
-optgroup,
-select,
-textarea {
-  font-family: inherit;
-  font-size: inherit;
-  line-height: inherit;
-  margin: 0;
-}
-
 header {
   width: 100%;
   height: auto;
@@ -142,49 +111,21 @@ header img {
   width: 100%;
 }
 
-.cover-text {
-  color: #fafafa;
-  left: 50%;
-  position: absolute;
-  text-align: center;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  top: 50%;
-  transform: translate(-50%, 0);
+#sign-img {
+  padding-top: 20px;
 }
 
-.usedCars-block {
-  background-color: rgb(201, 203, 204);
+#connect-form {
+  padding-top: 50px;
 }
 
-.carCards-block {
-  width: 100%;
-}
-
-.card-img-top {
-  padding-top: 10px;
-}
-
-#button-showVehicles {
+#button-submit {
   background-color: rgb(168, 3, 3);
   color: #fafafa;
 }
 
-#button-showServices {
-  background-color: rgb(168, 3, 3);
-  color: #fafafa;
-  margin-top: 3%;
-}
-
-#footer-cont {
-  background-color: rgb(201, 203, 204);
-}
-
-#workshop-title {
-  padding-top: 15px;
-}
-
-#adress-title {
-  padding-top: 15px;
+#request-button {
+  color: rgb(168, 3, 3);
 }
 
 #copyright-cont {
