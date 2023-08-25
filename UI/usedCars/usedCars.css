@@ -1,0 +1,187 @@
+@media (min-width: 1000px) and (max-width: 1400px) {
+  .navbar-brand img {
+    width: 35%;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-collapse {
+    display: flex !important;
+    flex-basis: auto;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-toggler {
+    display: none;
+  }
+}
+
+@media (min-width: 576px) {
+  .img-secretary {
+    margin-top: 40px;
+    margin-bottom: auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .img-service {
+    width: 350px;
+    height: auto;
+  }
+}
+
+body {
+  font-size: 1.2em;
+}
+
+.navbar-brand img {
+  padding-left: 2%;
+  float: left;
+  height: auto;
+  width: 30%;
+}
+
+img,
+svg {
+  vertical-align: middle;
+}
+
+.navbar {
+  background-image: url(../img/fond_bitume.jpg);
+  display: flex;
+  position: fixed;
+}
+
+.navbar-toggler {
+  background-color: transparent;
+  border: var(--bs-border-width) solid var(--bs-navbar-toggler-border-color);
+  border-radius: var(--bs-navbar-toggler-border-radius);
+  color: var(--bs-navbar-color);
+  font-size: var(--bs-navbar-toggler-font-size);
+  line-height: 1;
+  padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
+  transition: var(--bs-navbar-toggler-transition);
+}
+
+.navbar-toggler {
+  border: 0;
+  margin-top: 10px;
+}
+
+.navbar-nav {
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+}
+
+.collapse:not(.show) {
+  display: none;
+}
+
+.navbar-collapse {
+  flex-grow: 0;
+}
+
+.navbar-collapse {
+  padding-left: 10%;
+  align-items: center;
+  flex-basis: 100%;
+  flex-grow: 1;
+}
+
+.nav-item {
+  padding-left: 20px;
+  font-size: 1.3rem;
+  text-shadow: 1px 1px 2px rgba(1, 1, 0, 0.9);
+  font-family: "Sintony", sans-serif;
+}
+
+button {
+  background-color: #5c160d;
+  border: 0;
+  border-radius: 0;
+  color: #fafafa;
+  margin-bottom: 5px;
+  margin-top: 20px;
+  padding: 10px 50px;
+  transition: color 0.3s ease;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  margin: 0;
+}
+
+h4.service-title {
+  padding-left: 12px;
+}
+
+#infoServices-text {
+  padding-top: 50px;
+}
+
+#listService-cont {
+  background-color: rgb(201, 203, 204);
+}
+
+#footer-cont {
+  background-color: rgb(201, 203, 204);
+}
+
+#workshop-title {
+  padding-top: 15px;
+}
+
+#adress-title {
+  padding-top: 15px;
+}
+
+#copyright-cont {
+  height: 60px;
+  width: 100%;
+  background-color: rgb(54, 54, 54);
+  color: #fafafa;
+}
+
+button.btn {
+  width: 80%;
+  background-color: #5c160d;
+  color: #fafafa;
+}
+
+.text-filtered {
+  margin-top: 35px;
+}
+
+#filter-cont {
+  border: solid 2px black;
+  border-radius: 15px;
+}
+
+.img-commercial {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+
+.warranty-logo {
+  width: 70%;
+  height: auto;
+}
+
+#comContact-button {
+  width: 300px;
+}
