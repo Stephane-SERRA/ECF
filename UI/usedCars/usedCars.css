@@ -22,6 +22,10 @@
     margin-top: 40px;
     margin-bottom: auto;
   }
+  .search-result {
+    width: 500px;
+    height: auto;
+  }
 }
 
 @media (max-width: 576px) {
@@ -29,11 +33,21 @@
     width: 350px;
     height: auto;
   }
+  .search-result {
+    width: 300px;
+    height: auto;
+  }
 }
+
+/*BODY*/
 
 body {
   font-size: 1.2em;
+  background-color: #fafafa;
+  color: rgb(54, 54, 54);
 }
+
+/*NAVBAR*/
 
 .navbar-brand img {
   padding-left: 2%;
@@ -42,16 +56,20 @@ body {
   width: 30%;
 }
 
-img,
-svg {
-  vertical-align: middle;
-}
-
 .navbar {
   background-image: url(../img/fond_bitume.jpg);
   display: flex;
   position: fixed;
 }
+
+.nav-item {
+  padding-left: 20px;
+  font-size: 1.3rem;
+  text-shadow: 1px 1px 2px rgba(1, 1, 0, 0.9);
+  font-family: "Sintony", sans-serif;
+}
+
+/*--Toggler--*/
 
 .navbar-toggler {
   background-color: transparent;
@@ -91,74 +109,17 @@ svg {
   flex-grow: 1;
 }
 
-.nav-item {
-  padding-left: 20px;
-  font-size: 1.3rem;
-  text-shadow: 1px 1px 2px rgba(1, 1, 0, 0.9);
-  font-family: "Sintony", sans-serif;
-}
+/*MAIN*/
 
-button {
-  background-color: #5c160d;
-  border: 0;
-  border-radius: 0;
-  color: #fafafa;
-  margin-bottom: 5px;
-  margin-top: 20px;
-  padding: 10px 50px;
-  transition: color 0.3s ease;
-}
-
-button,
-select {
-  text-transform: none;
-}
-
-button,
-input,
-optgroup,
-select,
-textarea {
-  font-family: inherit;
-  font-size: inherit;
-  line-height: inherit;
-  margin: 0;
-}
-
-h4.service-title {
-  padding-left: 12px;
-}
-
-#infoServices-text {
-  padding-top: 50px;
-}
-
-#listService-cont {
-  background-color: rgb(201, 203, 204);
-}
-
-#footer-cont {
-  background-color: rgb(201, 203, 204);
-}
-
-#workshop-title {
-  padding-top: 15px;
-}
-
-#adress-title {
-  padding-top: 15px;
-}
-
-#copyright-cont {
-  height: 60px;
-  width: 100%;
-  background-color: rgb(54, 54, 54);
-  color: #fafafa;
+main {
+  font-family: "Nunito", sans-serif;
+  background-color: #fafafa;
+  color: rgb(54, 54, 54);
 }
 
 button.btn {
   width: 80%;
-  background-color: #5c160d;
+  background-color: rgb(168, 3, 3);
   color: #fafafa;
 }
 
@@ -167,8 +128,24 @@ button.btn {
 }
 
 #filter-cont {
-  border: solid 2px black;
+  border: solid 2px rgb(54, 54, 54);
   border-radius: 15px;
+}
+
+#button-search,
+#comContact-button {
+  background-color: rgb(168, 3, 3);
+  color: #fafafa;
+}
+
+.search-result {
+  border: solid 2px rgb(54, 54, 54);
+  border-radius: 15px;
+  border-color: rgb(168, 3, 3);
+}
+
+#usedCars-list-cont {
+  background-color: rgb(201, 203, 204);
 }
 
 .img-commercial {
@@ -184,4 +161,34 @@ button.btn {
 
 #comContact-button {
   width: 300px;
+}
+
+#comContact-button:hover,
+#button-search:hover,
+button.btn:hover {
+  background-color: rgb(10, 148, 17);
+  color: #fafafa;
+}
+
+/*FOOTER*/
+
+footer {
+  font-family: "Nunito", sans-serif;
+  color: rgb(54, 54, 54);
+}
+
+#footer-cont {
+  background-color: rgb(201, 203, 204);
+}
+
+#workshop-title,
+#adress-title {
+  padding-top: 15px;
+}
+
+#copyright-cont {
+  height: 60px;
+  width: 100%;
+  background-color: rgb(54, 54, 54);
+  color: #fafafa;
 }
