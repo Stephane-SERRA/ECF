@@ -35,9 +35,13 @@
   }
 }
 
+/*BODY*/
+
 body {
   font-size: 1.2em;
 }
+
+/*NAVBAR*/
 
 .navbar-brand img {
   padding-left: 2%;
@@ -46,16 +50,20 @@ body {
   width: 30%;
 }
 
-img,
-svg {
-  vertical-align: middle;
-}
-
 .navbar {
   background-image: url(../img/fond_bitume.jpg);
   display: flex;
   position: fixed;
 }
+
+.nav-item {
+  padding-left: 20px;
+  font-size: 1.3rem;
+  text-shadow: 1px 1px 2px rgba(1, 1, 0, 0.9);
+  font-family: "Sintony", sans-serif;
+}
+
+/*--Toggler--*/
 
 .navbar-toggler {
   background-color: transparent;
@@ -95,21 +103,15 @@ svg {
   flex-grow: 1;
 }
 
-.nav-item {
-  padding-left: 20px;
-  font-size: 1.3rem;
-  text-shadow: 1px 1px 2px rgba(1, 1, 0, 0.9);
-  font-family: "Sintony", sans-serif;
+/*MAIN*/
+
+main {
+  font-family: "Nunito", sans-serif;
+  background-color: #fafafa;
+  color: rgb(54, 54, 54);
 }
 
-header {
-  width: 100%;
-  height: auto;
-}
-
-header img {
-  width: 100%;
-}
+/*--Formulary--*/
 
 #sign-img {
   padding-top: 20px;
@@ -126,6 +128,13 @@ header img {
 
 #request-button {
   color: rgb(168, 3, 3);
+}
+
+/*FOOTER*/
+
+footer {
+  font-family: "Nunito", sans-serif;
+  color: rgb(54, 54, 54);
 }
 
 #copyright-cont {

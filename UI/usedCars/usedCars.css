@@ -148,6 +148,10 @@ button.btn {
   background-color: rgb(201, 203, 204);
 }
 
+.card-img-top {
+  padding-top: 10px;
+}
+
 .img-commercial {
   width: 100%;
   height: auto;

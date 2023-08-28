@@ -4,6 +4,13 @@
   }
 }
 
+@media (max-width: 1220px) {
+  .img-service {
+    width: 350px;
+    height: auto;
+  }
+}
+
 @media (min-width: 992px) {
   .navbar-expand-lg .navbar-collapse {
     display: flex !important;
@@ -31,9 +38,15 @@
   }
 }
 
+/*BODY*/
+
 body {
   font-size: 1.2em;
+  background-color: #fafafa;
+  color: rgb(54, 54, 54);
 }
+
+/*NAVBAR*/
 
 .navbar-brand img {
   padding-left: 2%;
@@ -42,16 +55,20 @@ body {
   width: 30%;
 }
 
-img,
-svg {
-  vertical-align: middle;
-}
-
 .navbar {
   background-image: url(../img/fond_bitume.jpg);
   display: flex;
   position: fixed;
 }
+
+.nav-item {
+  padding-left: 20px;
+  font-size: 1.3rem;
+  text-shadow: 1px 1px 2px rgba(1, 1, 0, 0.9);
+  font-family: "Sintony", sans-serif;
+}
+
+/*--Toggler--*/
 
 .navbar-toggler {
   background-color: transparent;
@@ -91,44 +108,15 @@ svg {
   flex-grow: 1;
 }
 
-.nav-item {
-  padding-left: 20px;
-  font-size: 1.3rem;
-  text-shadow: 1px 1px 2px rgba(1, 1, 0, 0.9);
-  font-family: "Sintony", sans-serif;
+/*MAIN*/
+
+main {
+  font-family: "Nunito", sans-serif;
+  background-color: #fafafa;
+  color: rgb(54, 54, 54);
 }
 
-button {
-  background-color: #5c160d;
-  border: 0;
-  border-radius: 0;
-  color: #fafafa;
-  margin-bottom: 5px;
-  margin-top: 20px;
-  padding: 10px 50px;
-  transition: color 0.3s ease;
-}
-
-button,
-select {
-  text-transform: none;
-}
-
-button,
-input,
-optgroup,
-select,
-textarea {
-  font-family: inherit;
-  font-size: inherit;
-  line-height: inherit;
-  margin: 0;
-}
-
-.img-service {
-  border-radius: 15px;
-}
-
+.img-service,
 .img-secretary {
   border-radius: 15px;
 }
@@ -143,6 +131,13 @@ h4.service-title {
 
 #listService-cont {
   background-color: rgb(201, 203, 204);
+}
+
+/*FOOTER*/
+
+footer {
+  font-family: "Nunito", sans-serif;
+  color: rgb(54, 54, 54);
 }
 
 #footer-cont {
