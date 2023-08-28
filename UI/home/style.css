@@ -164,6 +164,12 @@ main {
   color: #fafafa;
 }
 
+#button-showVehicles:hover,
+#button-showServices:hover {
+  background-color: rgb(10, 148, 17);
+  color: #fafafa;
+}
+
 #button-showServices {
   margin-top: 3%;
 }

@@ -126,6 +126,11 @@ main {
   color: #fafafa;
 }
 
+#button-submit:hover {
+  background-color: rgb(163, 5, 155);
+  color: #fafafa;
+}
+
 #request-button {
   color: rgb(168, 3, 3);
 }
