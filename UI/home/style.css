@@ -1,6 +1,15 @@
-@media (min-width: 1000px) and (max-width: 1400px) {
+@media (min-width: 1400px) {
+  .cover-text {
+    margin-top: 450px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1400px) {
   .navbar-brand img {
     width: 35%;
+  }
+  .cover-text {
+    margin-top: 230px;
   }
 }
 
@@ -17,9 +26,24 @@
   }
 }
 
-@media (max-width: 500px) {
+@media (min-width: 790px) and (max-width: 991px) {
+  .cover-text {
+    margin-top: 150px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 789px) {
+  .cover-text {
+    margin-top: 80px;
+  }
+}
+
+@media (max-width: 575px) {
   .cover-text {
     margin-top: 0px;
+  }
+  .cover-title {
+    font-size: 100%;
   }
   .img_services {
     width: 300px;
@@ -27,21 +51,15 @@
   }
 }
 
-@media (min-width: 900px) {
-  .cover-text {
-    margin-top: 70px;
-  }
-}
-
-@media (min-width: 1400px) {
-  .cover-text {
-    margin-top: 300px;
-  }
-}
+/*BODY*/
 
 body {
   font-size: 1.2em;
+  background-color: #fafafa;
+  color: rgb(54, 54, 54);
 }
+
+/*NAVBAR*/
 
 .navbar-brand img {
   padding-left: 2%;
@@ -50,16 +68,20 @@ body {
   width: 30%;
 }
 
-img,
-svg {
-  vertical-align: middle;
-}
-
 .navbar {
   background-image: url(../img/fond_bitume.jpg);
   display: flex;
   position: fixed;
 }
+
+.nav-item {
+  padding-left: 20px;
+  font-size: 1.3rem;
+  text-shadow: 1px 1px 2px rgba(1, 1, 0, 0.9);
+  font-family: "Sintony", sans-serif;
+}
+
+/*--Toggler--*/
 
 .navbar-toggler {
   background-color: transparent;
@@ -99,39 +121,7 @@ svg {
   flex-grow: 1;
 }
 
-.nav-item {
-  padding-left: 20px;
-  font-size: 1.3rem;
-  text-shadow: 1px 1px 2px rgba(1, 1, 0, 0.9);
-  font-family: "Sintony", sans-serif;
-}
-
-button {
-  background-color: #5c160d;
-  border: 0;
-  border-radius: 0;
-  color: #fafafa;
-  margin-bottom: 5px;
-  margin-top: 20px;
-  padding: 10px 50px;
-  transition: color 0.3s ease;
-}
-
-button,
-select {
-  text-transform: none;
-}
-
-button,
-input,
-optgroup,
-select,
-textarea {
-  font-family: inherit;
-  font-size: inherit;
-  line-height: inherit;
-  margin: 0;
-}
+/*HEADER*/
 
 header {
   width: 100%;
@@ -148,41 +138,48 @@ header img {
   position: absolute;
   text-align: center;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  top: 50%;
+  top: 20%;
   transform: translate(-50%, 0);
 }
 
-.usedCars-block {
-  background-color: rgb(201, 203, 204);
+/*MAIN*/
+
+main {
+  font-family: "Nunito", sans-serif;
+  background-color: #fafafa;
+  color: rgb(54, 54, 54);
 }
 
-.carCards-block {
-  width: 100%;
+#usedCars-block {
+  background-color: rgb(201, 203, 204);
 }
 
 .card-img-top {
   padding-top: 10px;
 }
 
-#button-showVehicles {
+#button-showVehicles,
+#button-showServices {
   background-color: rgb(168, 3, 3);
   color: #fafafa;
 }
 
 #button-showServices {
-  background-color: rgb(168, 3, 3);
-  color: #fafafa;
   margin-top: 3%;
+}
+
+/*FOOTER*/
+
+footer {
+  font-family: "Nunito", sans-serif;
+  color: rgb(54, 54, 54);
 }
 
 #footer-cont {
   background-color: rgb(201, 203, 204);
 }
 
-#workshop-title {
-  padding-top: 15px;
-}
-
+#workshop-title,
 #adress-title {
   padding-top: 15px;
 }

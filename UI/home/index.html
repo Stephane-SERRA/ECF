@@ -11,6 +11,7 @@
     <title>Garage Parrot - Accueil</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Courgette&family=Sintony&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Courgette&family=Nunito&family=Sintony&display=swap"
     />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
@@ -20,6 +21,8 @@
     />
   </head>
   <body>
+    <!--NAVBAR-->
+
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
         <div class="d-flex align-items-center">
@@ -56,29 +59,35 @@
             </span>
           </button>
         </div>
-
-        <!--navbar-->
-
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
               <a
-                class="nav-link active"
+                class="nav-link disabled"
                 aria-current="page"
                 href="#"
-                style="color: white"
+                style="color: rgb(201, 203, 204)"
               >
                 ACCUEIL
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../services/services.html" style="color: white"> SERVICES </a>
+              <a
+                class="nav-link"
+                href="../services/services.html"
+                style="color: white"
+              >
+                SERVICES
+              </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../usedCars/usedCars.html" style="color: white"> OCCASIONS </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#" style="color: white"> AVIS </a>
+              <a
+                class="nav-link"
+                href="../usedCars/usedCars.html"
+                style="color: white"
+              >
+                OCCASIONS
+              </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="../form/form.html" style="color: white">
@@ -99,7 +108,7 @@
         title="Garage Vincent Parrot"
       />
       <div class="cover-text">
-        <h3>
+        <h3 class="cover-title">
           Vente de véhicules d'occasion récentes, entretien et réparations
         </h3>
       </div>
@@ -108,14 +117,14 @@
     <!--MAIN-->
 
     <main>
-      <div class="container-fluid p-3 text-center">
+      <div class="container-fluid p-3 text-center" id="carUsed-title-cont">
         <h2>Nos occasions à la une</h2>
       </div>
 
       <!--Cards-->
 
-      <div class="row usedCars-block align-items-center">
-        <div class="row carCards-block justify-content-around">
+      <div class="container-fluid pb-2 align-items-center" id="usedCars-block">
+        <div class="row justify-content-around">
           <div class="card m-2 border-dark" style="width: 18rem">
             <img
               class="card-img-top"
@@ -238,14 +247,14 @@
           </div>
         </div>
         <div class="button text-center m-3">
-          <button
+          <a
+            href="../usedCars/usedCars.html"
             type="button"
             class="btn btn-lg border-0"
             id="button-showVehicles"
-            href="#"
           >
             Voir nos véhicules
-          </button>
+          </a>
         </div>
       </div>
 
@@ -279,20 +288,30 @@
               véhicule d'occasion vous permet d'être dépanné gratuitement dans
               l'heure.
             </p>
-            <button
+            <a
+              href="../services/services.html"
               type="button"
               class="btn border-0"
               id="button-showServices"
-              href="#"
             >
               Nos services
-            </button>
+            </a>
           </div>
         </div>
       </div>
 
+      <!--Avis-->
+
       <div class="container-fluid pt-3 text-center" id="opinions-cont">
-        <h2>Vos avis</h2><footer>
+        <h2>Vos avis</h2>
+        <div class="row bg-danger">WIP</div>
+        <!--Avis(en cours de fabrication!!!)-->
+      </div>
+    </main>
+
+    <!--FOOTER-->
+
+    <footer>
       <div class="container-fluid text-center" id="footer-cont">
         <div class="row">
           <div class="col-12 col-md-4 text-center p-3" id="shedules">
@@ -344,12 +363,3 @@
     ></script>
   </body>
 </html>
-        <div class="row bg-danger">WIP</div>
-      </div>
-
-      <!--Avis(en cours de fabrication!!!)-->
-    </main>
-
-    <!--FOOTER-->
-
-    
