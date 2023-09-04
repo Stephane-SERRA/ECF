@@ -107,11 +107,23 @@ body {
 
 main {
   font-family: "Nunito", sans-serif;
-  background-color: #fafafa;
   color: rgb(54, 54, 54);
 }
 
+#connectText-cont {
+  background-color: green;
+}
+
+#display-text {
+  color: rgb(255, 255, 255);
+}
+
 /*--Formulary--*/
+
+.forget-text {
+  margin-bottom: 30px;
+  color: green;
+}
 
 #sign-img {
   padding-top: 20px;
@@ -121,18 +133,28 @@ main {
   padding-top: 50px;
 }
 
-#button-submit {
+.forget {
+  padding-top: 50px;
+}
+
+#button-submit,
+#button-disconnect {
   background-color: rgb(168, 3, 3);
   color: #fafafa;
 }
 
-#button-submit:hover {
-  background-color: rgb(163, 5, 155);
+#button-submit:hover,
+#button-disconnect:hover {
+  background-color: green;
   color: #fafafa;
 }
 
 #request-button {
   color: rgb(168, 3, 3);
+}
+
+input:valid {
+  border: 2px solid rgb(18, 97, 18);
 }
 
 /*FOOTER*/

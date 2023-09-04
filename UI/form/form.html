@@ -26,13 +26,13 @@
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
         <div class="d-flex align-items-center">
-          <a class="navbar-brand" href="#">
+          <div class="navbar-brand" href="#">
             <img
               src="../img/logo_garage.jpg"
               alt="Logo Garage Parrot"
               title="Garage Parrot"
             />
-          </a>
+          </div>
 
           <!--burger menu button-->
 
@@ -94,9 +94,10 @@
             </li>
             <li class="nav-item">
               <a
-                class="nav-link disabled"
+                class="nav-link"
                 href="#"
                 style="color: rgb(201, 203, 204)"
+                id="connect-link"
               >
                 CONNECTION
               </a>
@@ -109,6 +110,9 @@
     <!--MAIN-->
 
     <main>
+      <div class="container-fluid" id="connectText-cont">
+        <p id="display-text"></p>
+      </div>
       <div class="container-fluid text-center p-3">
         <h2>Connexion</h2>
 
@@ -120,41 +124,63 @@
           </div>
           <div class="col-12 col-md-7 text-center" id="connect-form">
             <form>
-              <!-- Email input -->
-              <div class="form-outline mb-4">
-                <input type="email" id="form2Example1" class="form-control" />
-                <label class="form-label" for="form2Example1"
-                  >Identifiant ou adresse mail</label
+              <div class="forget">
+                <h5 class="forget-text"></h5>
+                <button
+                  type="button"
+                  class="btn btn-block mb-4"
+                  id="button-disconnect"
+                  name="button"
                 >
+                  Déconnecter
+                </button>
               </div>
+              <!-- Ident input -->
+              <div class="remember">
+                <div class="form-outline mb-4" id="rememberIdent">
+                  <input
+                    type="text"
+                    id="identifiant"
+                    class="form-control"
+                    name="identifiant"
+                    required
+                  />
+                  <label class="form-label" for="form2Example1"
+                    >Identifiant</label
+                  >
+                </div>
 
-              <!-- Password input -->
-              <div class="form-outline mb-4">
-                <input
-                  type="password"
-                  id="form2Example2"
-                  class="form-control"
-                />
-                <label class="form-label" for="form2Example2"
-                  >Mot de passe</label
+                <!-- Password input -->
+                <div class="form-outline mb-4" id="rememberPassword">
+                  <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    class="form-control"
+                    required
+                  />
+                  <label class="form-label" for="form2Example2"
+                    >Mot de passe</label
+                  >
+                </div>
+
+                <!-- Submit button -->
+                <button
+                  type="submit"
+                  class="btn btn-block mb-4"
+                  id="button-submit"
+                  name="button"
                 >
-              </div>
+                  Se connecter
+                </button>
 
-              <!-- Submit button -->
-              <button
-                type="button"
-                class="btn btn-block mb-4"
-                id="button-submit"
-              >
-                Se connecter
-              </button>
-
-              <!-- Register buttons -->
-              <div class="text-center">
-                <p>
-                  Mot de passe oublié ?
-                  <a href="#!" id="request-button">Demandez-en un autre</a>.
-                </p>
+                <!-- Register buttons -->
+                <div class="text-center">
+                  <p>
+                    Mot de passe oublié ?
+                    <a href="#!" id="request-button">Demandez-en un autre</a>.
+                  </p>
+                </div>
               </div>
             </form>
           </div>
@@ -169,11 +195,12 @@
         © Copyright ECF STUDI 2023. Website by: Stéphane SERRA
       </div>
     </footer>
-    <script src="../script.js"></script>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
       crossorigin="anonymous"
     ></script>
+    <script src="../script.js" defer></script>
   </body>
 </html>

@@ -152,6 +152,11 @@ button.btn {
   padding-top: 10px;
 }
 
+.delete-card-link {
+  color: rgb(168, 3, 3);
+  margin-left: 20px;
+}
+
 .img-commercial {
   width: 100%;
   height: auto;
