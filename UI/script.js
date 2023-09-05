@@ -32,7 +32,7 @@ function nameDisplayCheck() {
   if (localStorage.getItem("name")) {
     let name = localStorage.getItem("name");
     link.textContent = "DECONNECTION";
-    link.style.color = "yellow";
+    link.style.color = "rgb(201, 203, 204)";
     welcomeText.textContent =
       "Bienvenue " + name + "!\nVous etes actuellement connecté.";
 

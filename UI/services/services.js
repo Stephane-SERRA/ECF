@@ -4,7 +4,7 @@ function nameDisplayCheck() {
   if (localStorage.getItem("name")) {
     let name = localStorage.getItem("name");
     link2.textContent = "DECONNECTION";
-    link.style.color = "white";
+    link.style.color = "yellow";
   } else {
     link2.textContent = "CONNECTION";
     link.style.color = "rgb(201, 203, 204)";

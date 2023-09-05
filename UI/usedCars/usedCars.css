@@ -132,6 +132,28 @@ button.btn {
   border-radius: 15px;
 }
 
+#createCard-btn {
+  background-color: green;
+}
+
+#deleteCard-btn {
+  background-color: orangered;
+}
+
+#createCard-btn,
+#deleteCard-btn {
+  width: 100%;
+  border-radius: 20px;
+}
+
+#createCard-btn:hover {
+  background-color: rgb(4, 238, 4);
+}
+
+#deleteCard-btn:hover {
+  background-color: rgb(255, 166, 0);
+}
+
 #button-search,
 #comContact-button {
   background-color: rgb(168, 3, 3);
@@ -150,11 +172,6 @@ button.btn {
 
 .card-img-top {
   padding-top: 10px;
-}
-
-.delete-card-link {
-  color: rgb(168, 3, 3);
-  margin-left: 20px;
 }
 
 .img-commercial {
