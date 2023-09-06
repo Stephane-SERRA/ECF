@@ -1,0 +1,199 @@
+@media (min-width: 1400px) {
+  .cover-text {
+    margin-top: 450px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1400px) {
+  .navbar-brand img {
+    width: 35%;
+  }
+  .cover-text {
+    margin-top: 230px;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-collapse {
+    display: flex !important;
+    flex-basis: auto;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-toggler {
+    display: none;
+  }
+}
+
+@media (min-width: 790px) and (max-width: 991px) {
+  .cover-text {
+    margin-top: 150px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 789px) {
+  .cover-text {
+    margin-top: 80px;
+  }
+}
+
+@media (max-width: 575px) {
+  .cover-text {
+    margin-top: 0px;
+  }
+  .cover-title {
+    font-size: 100%;
+  }
+  .img_services {
+    width: 300px;
+    height: auto;
+  }
+}
+
+/*BODY*/
+
+body {
+  font-size: 1.2em;
+  background-color: #fafafa;
+  color: rgb(54, 54, 54);
+}
+
+/*NAVBAR*/
+
+.navbar-brand img {
+  padding-left: 2%;
+  float: left;
+  height: auto;
+  width: 30%;
+}
+
+.navbar {
+  background-image: url(../img/fond_bitume.jpg);
+  display: flex;
+  position: fixed;
+}
+
+.nav-item {
+  padding-left: 20px;
+  font-size: 1.3rem;
+  text-shadow: 1px 1px 2px rgba(1, 1, 0, 0.9);
+  font-family: "Sintony", sans-serif;
+}
+
+/*--Toggler--*/
+
+.navbar-toggler {
+  background-color: transparent;
+  border: var(--bs-border-width) solid var(--bs-navbar-toggler-border-color);
+  border-radius: var(--bs-navbar-toggler-border-radius);
+  color: var(--bs-navbar-color);
+  font-size: var(--bs-navbar-toggler-font-size);
+  line-height: 1;
+  padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
+  transition: var(--bs-navbar-toggler-transition);
+}
+
+.navbar-toggler {
+  border: 0;
+  margin-top: 10px;
+}
+
+.navbar-nav {
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+}
+
+.collapse:not(.show) {
+  display: none;
+}
+
+.navbar-collapse {
+  flex-grow: 0;
+}
+
+.navbar-collapse {
+  padding-left: 10%;
+  align-items: center;
+  flex-basis: 100%;
+  flex-grow: 1;
+}
+
+#preview {
+  border: 2px solid rgb(168, 3, 3);
+  border-radius: 15px;
+}
+
+.publish-btn {
+  height: 30px;
+  margin-left: 30%;
+  margin-right: 30%;
+  background-color: green;
+  border-radius: 15px;
+}
+
+#image1,
+#image2,
+#image3 {
+  width: 200px;
+  height: auto;
+  border-radius: 5px;
+}
+
+#image2 {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.annType {
+  text-align: center;
+}
+
+.annDescription {
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: auto;
+  height: auto;
+  text-align: justify;
+}
+
+#annItems-cont2 {
+  border-top: 1px solid black;
+  padding-top: 10px;
+}
+
+.annPower,
+.annKm,
+.annYear,
+.annPrice {
+  width: 200px;
+  height: auto;
+  display: inline-block;
+  padding-left: 4%;
+}
+
+#view {
+  width: 100px;
+  height: auto;
+}
+
+#view,
+#publish-btn {
+  margin-top: 20px;
+  background-color: rgb(168, 3, 3);
+  color: #fafafa;
+}
+
+#publish-btn {
+  width: 300px;
+  height: auto;
+}
+
+#view:hover,
+#publish-btn:hover {
+  background-color: green;
+}
