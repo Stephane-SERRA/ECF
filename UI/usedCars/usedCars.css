@@ -185,7 +185,8 @@ button.btn {
   height: auto;
 }
 
-#comContact-button {
+#comContact-button,
+#comContact-button2 {
   width: 300px;
 }
 
@@ -194,6 +195,65 @@ button.btn {
 button.btn:hover {
   background-color: rgb(10, 148, 17);
   color: #fafafa;
+}
+
+/*MODALES*/
+
+#modal-dismissBtn,
+#modal-closeBtn,
+#modal-closeBtn2 {
+  background-color: rgb(201, 203, 204);
+  color: black;
+  width: 120px;
+  height: auto;
+}
+
+#modal-sendBtn {
+  background-color: green;
+  width: 180px;
+  height: auto;
+}
+
+#image1,
+#image2,
+#image3 {
+  width: 200px;
+  height: auto;
+  border-radius: 5px;
+}
+
+#image2 {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.annType {
+  text-align: center;
+}
+
+.annDescription {
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: auto;
+  height: auto;
+  text-align: justify;
+}
+
+#annItems-cont2 {
+  border-top: 1px solid black;
+  padding-top: 10px;
+}
+
+.annPower,
+.annKm,
+.annYear,
+.annPrice {
+  width: 220px;
+  height: auto;
+  display: inline-block;
+  padding-left: 3%;
 }
 
 /*FOOTER*/
