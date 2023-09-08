@@ -117,6 +117,27 @@ main {
   color: rgb(54, 54, 54);
 }
 
+/*Filter-Imputs-Range*/
+
+.rangeCont {
+  padding-bottom: 5px;
+  padding-top: 5px;
+  margin: 10px;
+  border-radius: 15px;
+  background-color: rgb(201, 203, 204);
+}
+
+input[type="range"] {
+  accent-color: rgb(168, 3, 3);
+}
+
+.labelRange {
+  font-size: 80%;
+  color: rgb(168, 3, 3);
+}
+
+/*Filter*/
+
 button.btn {
   width: 80%;
   background-color: rgb(168, 3, 3);

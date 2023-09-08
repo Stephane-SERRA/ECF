@@ -122,31 +122,50 @@
 
             <div class="col-12 col-md-3 col-lg-4 text-center" id="filter-cont">
                 <h4>Filtre</h4>
+
+                <!--Input-Range-Price-->
                 <div class="row">
-                    <div class="col col-6 text-center">
-                        <button class="btn btn-select m-4" type="button" data-toggle="collapse" data-target="#collapsePrice" aria-expanded="false" aria-controls="collapsePrice" >Modifier</button>
-                    </div>
-                    
-                    <div class="col col-6 ">
-                        <p class="text-filtered">Prix: Tous</p>
-                    </div>
-                </div>
-                <div class="row" id="km-select-cont">
-                    <div class="col col-6 text-center">
-                        <button class="btn btn-select m-4" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" >Modifier</button>
+                    <div class="rangeCont col-5 text-center">
+                        <h6>Prix</h6>
+                        <input type="range" id="priceChoiceMin" name="priceChoiceMin" min="1000" max="80000" step="100"/>
+                        <label class="labelRange" for="priceChoiceMin">Min</label>
+                        <br/>
+                        <input type="range" id="priceChoiceMax" name="priceChoiceMax" min="8000" max="100000" step="100">
+                        <label class="labelRange" for="priceChoiceMax">Max</label>
                     </div>
                     <div class="col col-6 ">
-                        <p class="text-filtered">kilométrage: Tous</p>
+                        <p class="text-filtered">De <span class="range-result" data-input="priceChoiceMin"></span> € à <span class="range-result" data-input="priceChoiceMax"></span> €</p>
                     </div>
                 </div>
-                <div class="row" id="year-select-cont">
-                    <div class="col col-6 text-center">
-                        <button class="btn btn-select m-4" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" >Modifier</button>
+                <!--Input-Range-Mileage-->
+                <div class="row">
+                    <div class="rangeCont col-5 text-center">
+                        <h6>Kilométrage</h6>
+                        <input type="range" id="mileageChoiceMin" name="mileageChoiceMin" min="0" max="100000" step="10000"/>
+                        <label class="labelRange" for="mileageChoiceMin">Min</label>
+                        <br/>
+                        <input type="range" id="mileageChoiceMax" name="mileageChoiceMax" min="10000" max="150000" step="10000">
+                        <label class="labelRange" for="mileageChoiceMax">Max</label>
                     </div>
                     <div class="col col-6 ">
-                        <p class="text-filtered">Année: Tous</p>
+                        <p class="text-filtered">De <span class="range-result" data-input="mileageChoiceMin"></span> km à <span class="range-result" data-input="mileageChoiceMax"></span> km</p>
                     </div>
                 </div>
+                <!--Input-Range-Year-->
+                <div class="row">
+                    <div class="rangeCont col-5 text-center">
+                        <h6>Année</h6>
+                        <input type="range" id="yearChoiceMin" name="yearChoiceMin" min="2000" max="2022" step="1"/>
+                        <label class="labelRange" for="mileageChoiceMin">Min</label>
+                        <br/>
+                        <input type="range" id="yearChoiceMax" name="yearChoiceMax" min="2010" max="2023" step="1">
+                        <label class="labelRange" for="yearChoiceMax">Max</label>
+                    </div>
+                    <div class="col col-6 ">
+                        <p class="text-filtered">De <span class="range-result" data-input="yearChoiceMin"></span> à <span class="range-result" data-input="yearChoiceMax"></span></p>
+                    </div>
+                </div>
+                <!--Button-Search-->
                 <div class="row">
                   <div class="*col col-12 text-center">
                     <button
@@ -687,32 +706,37 @@
             <div class="modal-body">
               <form>
                 <div class="mb-3">
-                  <label for="modal-name" class="col-form-label required">Votre nom:</label>
-                  <input type="text" class="form-control" id="modal-name">
+                  <label for="modal-name" class="col-form-label">Votre nom:</label>
+                  <input type="text" class="form-control" id="modal-name" name="modal-name" required was-validated>
+                  
                 </div>
                 <div class="mb-3">
-                  <label for="modal-phone" class="col-form-label required">Votre numéro de téléphone</label>
-                  <input type="text" class="form-control" id="modal-phone">
+                  <label for="modal-phone" class="col-form-label">Votre numéro de téléphone</label>
+                  <input type="text" class="form-control" id="modal-phone" name="modal-phone" required>
+                  
                 </div>
                 <div class="mb-3">
-                  <label for="modal-email" class="col-form-label required">Votre email:</label>
-                  <input type="email" class="form-control" id="modal-email">
+                  <label for="modal-email" class="col-form-label">Votre email:</label>
+                  <input type="email" class="form-control" id="modal-email" name="modal-email" required>
+                  
                 </div>
                 <div class="mb-3">
-                  <label for="message-text" class="col-form-label required">Votre message:</label>
-                  <textarea class="form-control" id="message-text"></textarea>
+                  <label for="message-text" class="col-form-label">Votre message:</label>
+                  <textarea class="form-control" id="message-text" name="message-text" required></textarea>
+                  
                 </div>
+                <div id="error"></div>
               </form>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn border-0" data-bs-dismiss="modal" id="modal-dismissBtn">Abandonner</button>
-              <button type="button" class="btn border-0" id="modal-sendBtn" data-bs-target="#contactModal2" data-bs-toggle="modal" data-bs-dismiss="modal">Envoyer la demande</button>
+              <button type="submit" class="btn border-0" id="modal-sendBtn" data-bs-target="#contactModal2" data-bs-toggle="modal" data-bs-dismiss="modal">Envoyer la demande</button>
             </div>
           </div>
         </div>
       </div>
       <!--SCD MODALE-->
-      <div class="modal fade" id="contactModal2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+      <div class="modal fade" id="contactModal2" aria-hidden="false" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
         <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
             <div class="modal-header">
