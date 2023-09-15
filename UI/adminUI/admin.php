@@ -325,13 +325,16 @@
               } else {
                 echo 'Echec de la sauvegarde';
               }
+
               ?>
             </div>
           </div>
         </div>
       </div>
       <div class="container-fluid text-center mb-3">
-        <button class="btn border-0" id="publish-btn">Publier</button>
+        <form method="POST">
+          <button class="btn border-0" type="submit" id="publish-btn" name="publish-btn">Publier</button>
+        </form>
       </div>
   </main>
 
