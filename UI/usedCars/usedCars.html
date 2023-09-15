@@ -189,7 +189,7 @@
         <!--create/delete cards buttons-->
 
         <div class="col-6 col-md-2 create-card text-center">
-          <button href="../adminUI/admin.html" class="btn createCard-button m-auto" id="createCard-btn">Créer une annonce</button>
+          <button onclick="window.location.href='../adminUI/admin.php';" class="btn createCard-button m-auto" id="createCard-btn">Créer une annonce</button>
         </div>
         <div class="col-6 col-md-2 delete-card text-center">
           <button href="#" class="btn deleteCard-button m-auto" id="deleteCard-btn">Supprimer une annonce</button>
@@ -704,10 +704,15 @@
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-              <form>
+              <form action="sendForm.php" method="POST">
                 <div class="mb-3">
-                  <label for="modal-name" class="col-form-label">Votre nom:</label>
-                  <input type="text" class="form-control" id="modal-name" name="modal-name" required was-validated>
+                  <label for="modal-firstName" class="col-form-label">Votre nom:</label>
+                  <input type="text" class="form-control" id="modal-firstName" name="modal-firstName" required was-validated>
+                  
+                </div>
+                <div class="mb-3">
+                  <label for="modal-lastName" class="col-form-label">Votre prénom:</label>
+                  <input type="text" class="form-control" id="modal-lastName" name="modal-lastNname" required was-validated>
                   
                 </div>
                 <div class="mb-3">
@@ -730,7 +735,7 @@
             </div>
             <div class="modal-footer">
               <button type="button" class="btn border-0" data-bs-dismiss="modal" id="modal-dismissBtn">Abandonner</button>
-              <button type="submit" class="btn border-0" id="modal-sendBtn" data-bs-target="#contactModal2" data-bs-toggle="modal" data-bs-dismiss="modal">Envoyer la demande</button>
+              <button type="submit" class="btn border-0" id="modal-sendBtn" data-bs-target="#contactModal3" data-bs-toggle="modal" data-bs-dismiss="modal">Envoyer la demande</button>
             </div>
           </div>
         </div>

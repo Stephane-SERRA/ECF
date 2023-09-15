@@ -1,2 +1,2 @@
-# ECF_studi_24
+# ECF
 ECF Graduate developpeur front-end / Garage Parrot

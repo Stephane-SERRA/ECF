@@ -33,7 +33,7 @@ rangeResults.forEach(function (rangeResult) {
   }
 });
 
-/*Form-validation*/
+/*Form-validation
 
 let userName = document.querySelector("#modal-name");
 let phoneNumber = document.querySelector("#modal-phone");
@@ -76,4 +76,4 @@ sendButton.addEventListener("click", (event) => {
     sendButton.data - bs - target;
     alert("Le formulaire est incomplet");
   }
-});
+});*/
