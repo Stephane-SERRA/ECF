@@ -159,19 +159,25 @@ main {
 }
 
 #button-showVehicles,
-#button-showServices {
+#button-showServices,
+#button-sendReview {
   background-color: rgb(168, 3, 3);
   color: #fafafa;
 }
 
 #button-showVehicles:hover,
-#button-showServices:hover {
+#button-showServices:hover,
+#button-sendReview:hover {
   background-color: #0a9410;
   color: #fafafa;
 }
 
 #button-showServices {
   margin-top: 3%;
+}
+
+#button-sendReview {
+  margin-bottom: 10px;
 }
 
 /*FOOTER*/
