@@ -1,3 +1,9 @@
+/*Création de la base de données*/
+CREATE DATABASE garage_parrot;
+
+
+
+
 /*ADMINISTRATEUR*/
 /*Création de la table "admin"*/
 CREATE TABLE admin
