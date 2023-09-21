@@ -187,8 +187,15 @@ button.btn {
   border-color: rgb(168, 3, 3);
 }
 
+/*Used cars list*/
+
 #usedCars-list-cont {
   background-color: rgb(201, 203, 204);
+}
+
+.deleteCard-link {
+  color: rgb(168, 3, 3);
+  display: inline-block;
 }
 
 .card-img-top {
@@ -286,6 +293,11 @@ footer {
 
 #footer-cont {
   background-color: rgb(201, 203, 204);
+}
+
+#modify-schedules-btn {
+  background-color: green;
+  width: 120px;
 }
 
 #workshop-title,

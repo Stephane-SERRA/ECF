@@ -158,10 +158,20 @@ main {
   padding-top: 10px;
 }
 
+.deleteCard-link {
+  color: rgb(168, 3, 3);
+  display: inline-block;
+}
+
 #button-showVehicles,
 #button-showServices,
 #button-sendReview {
   background-color: rgb(168, 3, 3);
+  color: #fafafa;
+}
+
+#button-deleteReview {
+  background-color: orange;
   color: #fafafa;
 }
 
@@ -176,7 +186,8 @@ main {
   margin-top: 3%;
 }
 
-#button-sendReview {
+#button-sendReview,
+#button-deleteReview {
   margin-bottom: 10px;
 }
 
@@ -189,6 +200,13 @@ footer {
 
 #footer-cont {
   background-color: rgb(201, 203, 204);
+}
+
+#modify-schedules-btn2 {
+  background-color: green;
+  color: white;
+  width: 120px;
+  border: none;
 }
 
 #workshop-title,

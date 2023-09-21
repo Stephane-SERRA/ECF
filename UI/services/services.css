@@ -144,6 +144,14 @@ footer {
   background-color: rgb(201, 203, 204);
 }
 
+#modify-schedules-btn1,
+#modify-services-btn {
+  background-color: green;
+  color: white;
+  width: 120px;
+  border: none;
+}
+
 #workshop-title {
   padding-top: 15px;
 }

@@ -50,7 +50,7 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="../form/form.html" style="color: white" id="connect-link1">
-              CONNECTION
+              DECONNEXION
             </a>
           </li>
         </ul>

@@ -31,7 +31,7 @@ link.addEventListener("click", function () {
 function nameDisplayCheck() {
   if (localStorage.getItem("name")) {
     let name = localStorage.getItem("name");
-    link.textContent = "DECONNECTION";
+    link.textContent = "DECONNEXION";
     link.style.color = "rgb(201, 203, 204)";
     welcomeText.textContent =
       "Bienvenue " + name + "!\nVous etes actuellement connecté.";
@@ -39,7 +39,7 @@ function nameDisplayCheck() {
     forgetDiv.style.display = "block";
     rememberDiv.style.display = "none";
   } else {
-    link.textContent = "CONNECTION";
+    link.textContent = "CONNEXION";
     link.style.color = "rgb(201, 203, 204)";
     forgetDiv.style.display = "none";
     rememberDiv.style.display = "block";
