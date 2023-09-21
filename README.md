@@ -12,4 +12,6 @@ Pour la partie technique, tous les diagrammes, wireframes et charte graphique so
 
 Lien vers Trello : https://trello.com/b/kevkzNQo/ecf-garage-parrot
 
+Nota: Le projet est inachevé au niveau du développement, certaines fonctionnalités seront par conséquent inopérantes.
+
 Bien cordialement
