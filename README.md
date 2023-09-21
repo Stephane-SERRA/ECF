@@ -16,5 +16,6 @@ Pour la partie technique, tous les diagrammes, wireframes et charte graphique so
 Lien vers Trello : https://trello.com/b/kevkzNQo/ecf-garage-parrot
 
 Nota: Le projet est inachevé au niveau du développement, certaines fonctionnalités seront par conséquent inopérantes.
+Les tentatives de mise en ligne ont échoué sur Netlify et Heroku, manquant de temps pour résoudre le problème, le site ne sera visible que par l'ouverture du code sur un navigateur local.
 
 Bien cordialement
